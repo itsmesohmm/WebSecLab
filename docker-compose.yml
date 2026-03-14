@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+
+  dvwa:
+    image: vulnerables/web-dvwa
+    container_name: dvwa
+    ports:
+      - "8081:80"
+    networks:
+      lab_net:
+        ipv4_address: 10.10.10.10
+
+  juiceshop:
+    image: bkimminich/juice-shop
+    container_name: juiceshop
+    ports:
+      - "3000:3000"
+    networks:
+      lab_net:
+        ipv4_address: 10.10.10.11
+
+networks:
+  lab_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.10.0/24
