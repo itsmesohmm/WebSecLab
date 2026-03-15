@@ -9,8 +9,6 @@ This project automatically deploys two intentionally vulnerable applications for
 
 The lab runs locally using Docker so you can practice attacks safely without affecting other systems.
 
-## Prerequisites
-
 The installer will automatically install:
 
 * Docker
