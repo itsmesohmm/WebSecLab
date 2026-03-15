@@ -46,7 +46,7 @@ The script will:
 
 ## Access the Applications
 
-After installation completes, open your browser.
+After installation completes, open your browser inside kali using chrome/firefox etc.
 
 DVWA:
 
