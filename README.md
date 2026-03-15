@@ -1,6 +1,6 @@
 # Som Web Hacking Lab
 
-A lightweight vulnerable web application lab using Docker.
+A lightweight vulnerable web application lab using Docker. Built for beginners to practice web hacking in a secure environment.
 
 This project automatically deploys two intentionally vulnerable applications for web security practice:
 
