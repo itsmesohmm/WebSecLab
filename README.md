@@ -9,18 +9,6 @@ This project automatically deploys two intentionally vulnerable applications for
 
 The lab runs locally using Docker so you can practice attacks safely without affecting other systems.
 
----
-
-## Lab Architecture
-
-Kali / Linux Host
-│
-└── Docker Network
-    ├── DVWA
-    └── OWASP Juice Shop
-
----
-
 ## Prerequisites
 
 The installer will automatically install:
@@ -109,12 +97,4 @@ From the project directory:
 docker compose up -d
 ```
 
----
 
-
-
----
-
-## License
-
-MIT License
