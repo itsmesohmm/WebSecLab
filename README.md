@@ -1,4 +1,4 @@
-# Som Web Hacking Lab
+# Som's Web Hacking Lab
 
 A lightweight vulnerable web application lab using Docker. Built for beginners to practice web hacking in a secure environment.
 
