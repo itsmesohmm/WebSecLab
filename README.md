@@ -1,4 +1,4 @@
-# Som's Web Hacking Lab
+# WebSecLab
 
 A lightweight vulnerable web application lab using Docker. Built for students and instructors to practice web application security testing in a secure and controlled environment.
 
