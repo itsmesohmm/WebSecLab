@@ -1,24 +1,23 @@
-version: "3"
-
 services:
-
   dvwa:
     image: vulnerables/web-dvwa
     container_name: dvwa
     ports:
-      - "8081:80"
+      - "127.0.0.1:8081:80"
     networks:
       lab_net:
         ipv4_address: 10.10.10.10
+    restart: unless-stopped
 
   juiceshop:
     image: bkimminich/juice-shop
     container_name: juiceshop
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
     networks:
       lab_net:
         ipv4_address: 10.10.10.11
+    restart: unless-stopped
 
 networks:
   lab_net:
