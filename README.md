@@ -1,18 +1,15 @@
 # Som's Web Hacking Lab
 
-A lightweight vulnerable web application lab using Docker. Built for beginners to practice web hacking in a secure environment.
+A lightweight vulnerable web application lab using Docker. Built for students and instructors to practice web application security testing in a secure and controlled environment.
 
-This project automatically deploys two intentionally vulnerable applications for web security practice:
+This project automatically deploys two intentionally vulnerable applications:
 
 * **DVWA (Damn Vulnerable Web Application)**
 * **OWASP Juice Shop**
 
-The lab runs locally using Docker so you can practice attacks safely without affecting other systems.
+The lab runs locally using Docker with predictable IPv4 addresses, making it suitable for web security practice, practical exercises, and demonstrations.
 
-The installer will automatically install:
-
-* Docker
-* Docker Compose
+The script will automatically handle the required Docker environment.
 
 Supported systems:
 
@@ -27,72 +24,3 @@ Clone the repository:
 ```bash
 git clone https://github.com/itsmesohmm/som-web-lab.git
 cd som-web-lab
-```
-
-Run the installer:
-
-```bash
-sudo bash install.sh
-```
-
-The script will:
-
-1. Install Docker
-2. Start Docker service
-3. Pull vulnerable images
-4. Launch the lab containers
-
----
-
-## Access the Applications
-
-After installation completes, open your browser inside kali using chrome/firefox etc.
-
-DVWA:
-
-```
-http://10.10.10.10:80
-```
-
-OWASP Juice Shop:
-
-```
-http://10.10.10.11:3000
-```
-
----
-
-## Verify Containers
-
-You can confirm the lab is running with:
-
-```bash
-docker ps
-```
-
-You should see containers for:
-
-* dvwa
-* juiceshop
-
----
-
-## Stopping the Lab
-
-To stop all containers:
-
-```bash
-docker compose down
-```
-
----
-
-## Restarting the Lab
-
-From the project directory:
-
-```bash
-docker compose up -d
-```
-
-
