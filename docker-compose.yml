@@ -1,3 +1,15 @@
+# WebSecLab — target definitions
+#
+# Two ways to reach each target, on purpose:
+#   1. Host URL (127.0.0.1:PORT) — for browser-based exploitation
+#      (SQLi forms, XSS, DVWA/Juice Shop UI). Bound to localhost only
+#      so the lab isn't exposed to whatever network the VM is on.
+#   2. Container IP (10.10.10.x) — for nmap/network-layer recon from
+#      Kali, so scanning behaves like a real internal network rather
+#      than just "check if a local port is open".
+#
+# Run `./lab.sh list` to see both addresses for each target.
+
 services:
   dvwa:
     image: vulnerables/web-dvwa
